@@ -1,9 +1,19 @@
-.homeMainContainer {
+.homeMainContainerLight {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   flex-direction: column;
+}
+
+.homeMainContainerDark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+  color: white;
+  background-color: black;
 }
 
 .homeImageEl {

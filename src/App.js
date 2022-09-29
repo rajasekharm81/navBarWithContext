@@ -6,9 +6,9 @@ import Home from './components/Home'
 
 import ThemeContext from './context/ThemeContext'
 
-// import About from './components/About'
+import About from './components/About'
 
-// import NotFound from './components/NotFound'
+import NotFound from './components/NotFound'
 
 import Navbar from './components/Navbar'
 
@@ -32,6 +32,8 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route component={NotFound} />
         </Switch>
       </ThemeContext.Provider>
     )
@@ -40,5 +42,5 @@ class App extends Component {
 
 export default App
 
-/* <Route exact path="/about" component={About} />
-          <Route component={NotFound} /> */
+/*
+ */

@@ -1,4 +1,7 @@
 import {Component} from 'react'
+
+import {Link} from 'react-router-dom'
+
 import './index.css'
 
 import ThemeContext from '../../context/ThemeContext'
@@ -52,8 +55,12 @@ class Navbar extends Component {
                   />
                 </div>
                 <MenuContainer>
-                  <HeadingElement theme={{isDarkTheme}}>Home</HeadingElement>
-                  <HeadingElement theme={{isDarkTheme}}>About</HeadingElement>
+                  <Link className="link" to="/">
+                    <HeadingElement theme={{isDarkTheme}}>Home</HeadingElement>
+                  </Link>
+                  <Link className="link" to="/about">
+                    <HeadingElement theme={{isDarkTheme}}>About</HeadingElement>
+                  </Link>
                 </MenuContainer>
                 <div>
                   <button
