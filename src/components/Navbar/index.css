@@ -1,0 +1,14 @@
+.websiteLogoImageElement {
+  height: 100%;
+  margin-left: 2vw;
+}
+
+.themeImageEl {
+  height: 100%;
+}
+
+.themeButton {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+}
